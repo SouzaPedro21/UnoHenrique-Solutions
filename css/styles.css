@@ -1,0 +1,79 @@
+/* Estilos gerais */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilos do carrossel */
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Estilos dos cards de serviços */
+.service-card {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Estilos do formulário */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos do mapa */
+.map-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos do rodapé */
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px;
+    }
+    
+    .service-card .card-img-top {
+        height: 150px;
+    }
+} 
